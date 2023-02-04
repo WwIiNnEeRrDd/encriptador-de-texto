@@ -1,0 +1,522 @@
+body{
+    background: lightblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    border:3px solid yellow;
+    background: url(imagenesencriptador/background.jpg);
+}
+
+.Textodebienvenida{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2.1%;
+    margin-top: 2.1%;
+}
+
+.logo{
+    position:absolute;
+    width: 6%;
+    top: 0;
+    margin-left: 0.5%;
+    margin-top: 0.2%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+/*left*/
+
+#texto{
+    width: 31%;
+    height: 22%;
+    position: fixed;
+    left: 6.5%;
+    top: 19.5%;
+    background: url(imagenesencriptador/background.jpg);
+    color: white;
+    font-weight: bold;
+    border:3px solid yellow;
+    font-size: 20px;
+    resize: none;
+    text-transform: lowercase;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#texto::-webkit-input-placeholder{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#reglas{
+    width: 12%;
+    margin-top: 5%;
+    margin-left: 39%;
+    text-align: left;
+    background: url(imagenesencriptador/background.jpg);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    display: none;
+}
+
+.itemstitulo{
+    text-align: center;
+    font-size: 20px;
+}
+
+.itemstitulo::after, .itemstitulo::before{
+    content: "❗";
+}
+
+.items{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#imagenreglas{
+    width: 3%;
+    position: absolute;
+    top: 24%;
+    left: 39%;
+    cursor: pointer;
+}
+
+.botonencriptar{
+    width: 13%;
+    height: 27%;
+    position: fixed;
+    left: 6.5%;
+    bottom: 21%;
+    border: 3px solid yellow;
+    background: url(imagenesencriptador/background.jpg);
+    background-image: url(imagenesencriptador/encriptar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.encriptar{
+    position: fixed;
+    width: 17%;
+    left: 4.7%;
+    bottom: 14%;
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+
+.botondesencriptar{
+    width: 13%;
+    height: 27%;
+    position: fixed;
+    left: 24.5%;
+    bottom: 21%;
+    font-size: 20px;
+    border:3px solid yellow;
+    background: url(imagenesencriptador/background.jpg);
+    background-image: url(imagenesencriptador/desencriptar.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position:center;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.desencriptar{
+    position: fixed;
+    width: 20%;
+    left: 22%;
+    bottom: 14%;
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+
+.desencriptar::before, .encriptar:before{
+    content: "☝";
+}
+
+.desencriptar::after, .encriptar:after{
+    content: "☝";
+}
+
+.botondesencriptar:hover, .botonencriptar:hover{
+    border: 3px solid red;
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: pointer;
+}
+
+/*right*/
+
+#marco{
+    background: url(imagenesencriptador/background.jpg);
+    width: 40%;
+    height: 64%;
+    position: fixed;
+    right: 4%;
+    top: 19.5%;
+    border:3px solid yellow;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: lowercase;
+    resize: none;
+}
+
+#imagendeespera{
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 10%;
+    position: fixed;
+    right: 12%;
+    bottom: 45%;
+}
+
+#imagendeespera2{
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 10%;
+    position: fixed;
+    right: 27%;
+    bottom: 48%;
+}
+
+.textoderecha{
+    width: 32%;
+    position: fixed;
+    right: 8%;
+    bottom: 30%;
+}
+
+#mensajetitulo{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+
+#mensaje{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#botoncopiar{
+    width: 10%;
+    height: 5%;
+    position: fixed;
+    background: lightblue;
+    right: 19%;
+    bottom: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border:3px solid red;
+    display: none
+}
+
+#botoncopiar:hover{
+    border: 3px solid yellow;
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: pointer;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    border:3px solid yellow;
+    background: url(imagenesencriptador/background.jpg);
+}
+
+.creditos{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
+}
+
+@media screen and (max-width:1060px){
+    #texto{
+        width: 29%;
+        height: 20%;
+    }
+    
+    #reglas{
+        width: 10%;
+    }
+
+    .botonencriptar{
+        width: 13%;
+        height: 25%;
+    }
+
+    .botondesencriptar{
+        width: 13%;
+        height: 25%;
+    }
+
+    .encriptar{
+        font-size: 25px;
+    }
+
+    .desencriptar{
+        font-size: 25px;
+    }
+
+    #marco{
+        width: 38%;
+        height: 62%;
+    }
+    
+    #mensajetitulo{
+        font-size: 35px;
+    }
+    
+    #mensaje{
+        font-size: 15px;
+    }
+
+    #botoncopiar{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:880px){
+    
+    #texto{
+        width: 27%;
+        height: 18%;
+        font-size: 15px;
+    }
+
+    #texto::-webkit-input-placeholder{
+        font-size: 15px;
+    }
+    
+    #imagenreglas{
+        display: none;
+    }
+    
+    .botonencriptar{
+        width: 15%;
+        height: 23%;
+    }
+
+    .botondesencriptar{
+        width: 15%;
+        height: 23%;
+        position: fixed;
+        left: 30%;
+    }
+
+    .encriptar{
+        font-size: 20px;
+    }
+
+    .desencriptar{
+        font-size: 20px;
+        position: fixed;
+        left: 30%;
+    }
+
+    #marco{
+        width: 36%;
+        height: 60%;
+    }
+    
+    #mensajetitulo{
+        font-size: 30px;
+    }
+    
+    #mensaje{
+        font-size: 13px;
+    }
+
+    #botoncopiar{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:705px){
+    .logo{
+        width: 4%;
+    }
+    
+    .encriptar{
+        font-size: 18px;
+    }
+
+    .desencriptar{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .encriptar{
+        font-size: 16px;
+    }
+
+    .desencriptar{
+        font-size: 16px;
+    }
+
+    #botoncopiar{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:585px){
+    .botonencriptar{
+        width: 15%;
+        height: 15%;
+    }
+
+    .botondesencriptar{
+        width: 15%;
+        height: 15%;
+    }   
+
+    #imagendeespera{
+        position: fixed;
+        bottom: 60%;
+    }
+
+    #imagendeespera2{
+        position: fixed;
+        bottom: 60%;
+    }
+
+    #mensajetitulo{
+        font-size: 25px;
+    }
+    
+    #mensaje{
+        font-size: 10px;
+    }
+
+    #botoncopiar{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:425px){
+
+    #texto{
+        font-size: 10px;
+    }
+    
+    #texto::-webkit-input-placeholder{
+        font-size: 10px;
+    }
+
+    .botonencriptar{
+        position: fixed;
+        bottom: 30%;
+        width: 20%;
+    }  
+
+    .encriptar{
+        position: fixed;
+        bottom: 20%;
+    }
+    
+    .botondesencriptar{
+        position: fixed;
+        bottom: 30%;
+        width: 20%;
+    }  
+
+    .desencriptar{
+        position: fixed;
+        bottom: 20%;
+    }
+
+    #mensajetitulo{
+        margin-bottom: 30%;
+    }
+
+    #imagendeespera{
+        width: 25%;
+    }
+
+    #imagendeespera2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:390px){
+    
+    #marco{
+        width: 36%;
+        height: 60%;
+        font-size: 15px;
+    }
+    
+    #mensajetitulo{
+        font-size: 20px;
+        margin-bottom: 30%;
+    }
+    
+    #mensaje{
+        font-size: 10px;
+    }
+
+    #botoncopiar{
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width:320px){
+    
+    .encriptar{
+        font-size: 13px;
+    }
+
+    .desencriptar{
+        font-size: 13px;
+    }
+
+    #botoncopiar{
+        font-size: 5px;
+    }
+}
+
+
+
+
+
+
+
+
